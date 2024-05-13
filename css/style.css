@@ -1,0 +1,172 @@
+main .merchendise .filters-content .filtering > select {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  main .merchendise .filters-content .filtering > select:focus {
+    outline: none;
+  }
+  main .merchendise .filters-content .filtering > input {
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 0px 10px;
+  }
+  main .merchendise .filters-content .filtering > input:focus {
+    outline-color: #FF9933;
+  }
+  main .merchendise .filter-cat-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 2fr));
+    place-items: center;
+    gap: 30px;
+  }
+  main .merchendise .hidden {
+    display: none;
+  }
+  main .merchendise .filter-cat-results .f-cat {
+    opacity: 0;
+    display: none;
+  }
+  main .merchendise .filter-cat-results .f-cat.active {
+    opacity: 1;
+    display: block;
+  }
+  main .merchendise .card {
+    position: relative;
+    width: 390px;
+    height: 480px;
+    transition: 0.5s;
+    font-family: "int";
+    cursor: pointer;
+  }
+  main .merchendise .card:hover {
+    transform: translateY(-20px);
+  }
+  main .merchendise .card::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #34AD54, #34AD54);
+    border-radius: 1.2em;
+  }
+  main .merchendise .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #34AD54, #34AD54);
+    filter: blur(30px);
+  }
+  main .merchendise .card > span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: white;
+    z-index: 2;
+    border-radius: 1em;
+  }
+  main .merchendise .card > span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  main .merchendise .card .content {
+    position: relative;
+    padding: 10px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .merchendise .card .content > img {
+    width: 200px;
+    height: 200px;
+  }
+  main .merchendise .card .content > div > h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+  main .merchendise .card .content > div > h4 {
+    color: #34AD54;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+  }
+  main .merchendise .card .content > div > p {
+    color: #818181;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+  main .merchendise .card .content > div > h5 {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .merchendise .card .content > div > h5 > a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s linear;
+    display: inline-block;
+    top: 15px;
+  }
+  main .merchendise .card .content > div > h5 > a::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FF9933;
+    left: -60px;
+    top: -10px;
+    transition: all ease 0.5s;
+  }
+  main .merchendise .card .content > div > h5 > a:hover:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    background: #FF9933;
+    left: -60px;
+    top: -15px;
+    color: white;
+  }
+  main .merchendise .card .content > div > h5 > a:hover {
+    color: white;
+  }
+  main .merchendise .card .content > div:nth-of-type(1) {
+    border-bottom: 1px solid #B5B5B5;
+    padding-bottom: 20px;
+  }
+  main .merchendise .card .content > div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  }/*# sourceMappingURL=style.css.map */
